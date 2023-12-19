@@ -10,43 +10,122 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <style>
+      /* Style untuk tombol Telp */
+      .btn-telp {
+        background-color: #34b7f1; /* Warna sesuai platform Telp */
+      }
+
+      /* Style untuk tombol WhatsApp */
+      .btn-whatsapp {
+        background-color: #25d366; /* Warna sesuai platform WhatsApp */
+      }
+
+      /* Style untuk tombol Gmail */
+      .btn-gmail {
+        background-color: #d44638; /* Warna sesuai platform Gmail */
+      }
+
+      /* Style untuk tombol Facebook */
+      .btn-facebook {
+        background-color: #3b5998; /* Warna sesuai platform Facebook */
+      }
+
+      /* Style untuk tombol Instagram */
+      .btn-instagram {
+        background-color: #bc2a8d; /* Warna sesuai platform Instagram */
+      }
+
+      /* Menerapkan warna ikon */
+      .btn {
+        color: white;
+      }
+      .btn:hover {
+        /* border-width: 2px;
+        border-color: var(--bs-blue); */
+        box-shadow: 0 0 0 2px var(--bs-blue);
+      }
+      .btn:hover i {
+        color: #000;
+      }
     </style>
   </head>
   <body>
-    <!-- <div class="container-fluid text-center">
-      <div class="row align-items-start">
-        <div class="col">
-          <img
-            src="https://www.hondatriobanjarmasin.com/userfiles/image/Profile.jpg"
-            class="img-thumbnail"
-            alt=""
-          />
-        </div>
-        <div class="col">One of three columns</div>
-      </div>
-    </div> -->
     <div class="row g-0 bg-light bg-gradient rounded-5">
       <div class="col-md-6 mb-md-0 p-md-4">
-        <img src="https://www.hondatriobanjarmasin.com/userfiles/image/Profile.jpg" class="w-100" alt="" />
+        <img
+          src="https://picsum.photos/500"
+          class="img-thumbnail w-100"
+          alt=""
+        />
       </div>
       <div class="col-md-6 p-4 ps-md-0 vstack gap-2 mx-auto">
-        <div>
-          <h5 class="mt-0 fs-2">MUHAMMAD ZEIN</h5>
-          <p>(Sales Executive)</p>
+        <div class="list-group list-group-flush rounded-3">
+          <div class="list-group-item">
+            <h5 class="mt-0 fs-2">MUHAMMAD ZEIN</h5>
+            <p>(Sales Executive)</p>
+          </div>
+          <div class="list-group-item gap-2 vstack">
+            <!-- Button for Telp -->
+            <a href="tel:+6282254154011" class="btn text-start btn-telp">
+              <i class="fas fa-phone-alt"></i>
+              6282254154011
+            </a>
+
+            <!-- Button for WhatsApp -->
+            <a
+              href="https://wa.me/6282254154011"
+              class="btn text-start btn-whatsapp"
+            >
+              <i class="fab fa-whatsapp"></i>
+              6282254154011
+            </a>
+
+            <!-- Button for Gmail -->
+            <a href="mailto:yanur@gmail.com" class="btn text-start btn-gmail">
+              <i class="fas fa-envelope"></i>
+              yanur@gmail.com
+            </a>
+
+            <!-- Button for Facebook -->
+            <a
+              href="https://www.facebook.com/yanur"
+              class="btn text-start btn-facebook"
+            >
+              <i class="fab fa-facebook"></i>
+              Yanur
+            </a>
+
+            <!-- Button for Instagram -->
+            <a
+              href="https://www.instagram.com/yanur"
+              class="btn text-start btn-instagram"
+            >
+              <i class="fab fa-instagram"></i>
+              @yanur
+            </a>
+          </div>
+          <div class="list-group-item vstack gap-2">
+            <h5>HONDA BANJARBARU</h5>
+            <p>
+              HONDA TRIO MOBIL BANJARMASIN <br />
+              Jl. A Yani KM 7,200 No.168 <br />
+              Banjarmasin - Kalimantan Selatan
+            </p>
+
+            <p>
+              Another instance of placeholder content for this other custom
+              component. It is intended to mimic what some real-world content
+              would look like, and we're using it here to give the component a
+              bit of body and size.
+            </p>
+          </div>
         </div>
-
-        <a href="#">6282254154011</a>
-        <a href="#">6282254154011</a>
-        <a href="#">yanur@gmail.com</a>
-        <a href="#">Yanur</a>
-        <a href="#">Yanur</a>
-
-        <h5>HONDA BANJARBARU</h5>
-        <p>HONDA TRIO MOBIL BANJARMASIN <br> Jl. A Yani KM 7,200 No.168 <br> Banjarmasin - Kalimantan Selatan</p>
-
-        <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
-        <a href="#">Selengkapnya</a>
       </div>
     </div>
   </body>
